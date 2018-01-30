@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+// Our variables
+$spacing-unit:     10px;
+$image-size:       50px;
+$icon-size:        15px;
+
+// Sizes
+$on-palm:          768px;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+code.highlighter-rouge {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.t-hackcss {  // Main prefix to avoid collisions
+
+  // navigation.html
+
+  &-navigation {
+    padding-right: $spacing-unit;
+  }
+
+  @at-root .hack &-navigation-heading {
+    padding-top: 20px;
+  }
+
+  // footer.html
+
+  @at-root body &-footer {
+    padding-bottom: $spacing-unit;
+  }
+
+  &-social {
+    display: inline-block;
+  }
+
+  &-social + &-social {
+    padding-left: $spacing-unit;
+  }
+
+  &-sm-reversed-grid.grid {
+    @include media-query($on-palm) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: $icon-size;
+    height: $icon-size;
+
+    > svg {
+      width: $icon-size;
+    }
+  }
+
+  // examples.html
+
+  &-media {
+    margin-bottom: 1.25rem;
+  }
+
+  &-media-shift {
+    max-width: $image-size;
+  }
+
+  &-media-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &-cards {
+    flex-wrap: wrap;
+    @include media-query($on-palm) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &-cards-cell {
+    padding-bottom: $spacing-unit;
+    padding-right: $spacing-unit;
+  }
+
+  &-cards-text {
+    margin: 0
+  }
+
+  &-cards-image {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  &-cards-link {
+    text-align: center;
+  }
+}

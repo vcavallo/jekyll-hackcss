@@ -1,0 +1,60 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: jekyll-hackcss
+description: > # this means to ignore newlines until "baseurl:"
+  A minimalistic theme for Jekyll, based on hack.css
+repository: https://github.com/wemake-services/jekyll-theme-hackcss
+baseurl: # the subpath of your site, e.g. /blog
+url: http://exnil.io  # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+# Sass settings
+# sass:
+#   style: compressed
+
+# Theme settings
+theme_mode: markdown  # choices are: 'dark', 'standard', 'markdown'
+
+# important:
+theme: jekyll-hackcss
+
+# Customizations
+your_name: vinney cavallo
+email: vinney@exnil.io
+
+navigation:
+  - text: Home
+    url: /
+  - text: Examples
+    url: /examples
+
+projects:
+  - name: git-secret
+    description: A bash-tool to store your private data inside a git repository.
+    link: https://sobolevn.github.io/git-secret
+  - name: awesome-cryptography
+    description: A curated list of cryptography resources and links.
+    link: https://github.com/sobolevn/awesome-cryptography
+  - name: ecto_autoslug_field
+    description: Automatically creates slugs for your Ecto models.
+    link: https://github.com/sobolevn/ecto_autoslug_field
+  - name: django-split-settings
+    description: Organize Django settings into multiple files and directories. Easily override and modify settings. Use wildcards and optional settings files.
+    link: https://github.com/sobolevn/django-split-settings
+
+social:
+  - service: github
+    username: vcavallo
+    link: https://github.com/vcavallo
+  - service: twitter
+    username: vinneycavallo
+    link: https://twitter.com/vinneycavallo
+
