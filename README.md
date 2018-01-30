@@ -1,5 +1,10 @@
 ![screenshot](screenshot.png)
 
+**This theme is a work-in-progress (and incidentally my first jekyll theme).
+It does _work_ - but it's also _in progress_** :)
+
+Check out the 'todo' section below to get an idea of what might be missing or under construction. And feel free to contribute!
+
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
@@ -22,10 +27,14 @@ Or install it yourself as:
 
     $ gem install hackcss
 
+Continue reading the _Usage_ section below before expecting this to work perfectly.
+
 ## Usage
 
-Refer to this excerpted `_config.yml` for other lines you might need to add
-to your jekyll install:
+if you're running a fresh jekyll install, change the `layout` in `index.md` from `home` to `default` (this is the  default name of the ...default layout..) and then start adding some markdown to `index.md` to see what this theme looks like.
+
+There are some rather important bits in `config.yml` that you'll need.  
+Refer to this excerpted, commented version to see what these settings do:
 
 ```yml
 # choose the theme mode you want to use:

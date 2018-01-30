@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-hackcss"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["vinney cavallo"]
   spec.email         = ["vcavallo@gmail.com"]
 
