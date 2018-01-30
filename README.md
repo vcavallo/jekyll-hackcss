@@ -26,36 +26,23 @@ Refer to this excerpted `_config.yml` for other lines you might need to add
 to your jekyll install:
 
 ```yml
-title: jekyll-hackcss
-description: > # this means to ignore newlines until "baseurl:"
-  A minimalistic theme for Jekyll, based on hack.css
-repository: https://github.com/wemake-services/jekyll-theme-hackcss
-baseurl: # the subpath of your site, e.g. /blog
-url: http://exnil.io  # the base hostname & protocol for your site
+# choose the theme mode you want to use:
+theme_mode: markdown  # choices are: 'dark', 'standard', 'markdown', 'markdown_large'
+# 'markdown_large' is unique to this project. it's basically the "standard" style
+# sizings, but keeping the "markdown" style font. It's my favorite :)
 
-# Build settings
-markdown: kramdown
-
-# Sass settings
-# sass:
-#   style: compressed
-
-# Theme settings
-theme_mode: markdown  # choices are: 'dark', 'standard', 'markdown'
-
-# important:
-theme: jekyll-hackcss
-
-# Customizations
+# pretty necessary for the footer (unless removed)
 your_name: vinney cavallo
 email: vinney@exnil.io
 
+# this is how the menu panel is constructed:
 navigation:
   - text: Home
     url: /
   - text: Examples
     url: /examples
 
+# if you want to use something like the card-based 'projects' in examples.html
 projects:
   - name: jekyll-hackcss
     description: A jekyll gem-style theme based on hack.css
@@ -80,11 +67,10 @@ social:
     link: https://twitter.com/vinneycavallo
 ```
 
-
-
 ## TODO:
 
 - get `jekyll-seo-tag` working
+- modernize! I think the original work in this repo was done for an earlier version of jekyll?
 - remove all traces of former theme
 - stop using hackss from cdn. include it here.
   - this might mean considering upgrade paths for future hack versions...

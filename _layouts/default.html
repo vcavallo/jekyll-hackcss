@@ -5,6 +5,8 @@
 
   {% if site.theme_mode == 'markdown' %}
   <body class="hack">
+  {% elsif site.theme_mode == 'markdown_large' %}
+  <body class="hack t-hackcss-body-large">
   {% elsif site.theme_mode == 'standard' %}
   <body class="standard">
   {% elsif site.theme_mode == 'dark' %}

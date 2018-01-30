@@ -6,7 +6,7 @@
     {% for link in site.navigation %}
       <a class="menu-item {% if url == link.url %}active{% endif %}"
         role="menuitem" href="{{ link.url | prepend: site.baseurl }}" title="{{ link.title }}">
-        {{ link.text }} <div class="pull-right">»</div>
+        {{ link.text }} <div class="pull-right">&gt;&gt;</div>
       </a>
     {% endfor %}
   </nav>
