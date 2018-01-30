@@ -59,16 +59,16 @@ navigation:
 projects:
   - name: jekyll-hackcss
     description: A jekyll gem-style theme based on hack.css
-    link: https://sobolevn.github.io/git-secret
-  - name: awesome-cryptography
-    description: A curated list of cryptography resources and links.
-    link: https://github.com/sobolevn/awesome-cryptography
-  - name: ecto_autoslug_field
-    description: Automatically creates slugs for your Ecto models.
-    link: https://github.com/sobolevn/ecto_autoslug_field
-  - name: django-split-settings
-    description: Organize Django settings into multiple files and directories. Easily override and modify settings. Use wildcards and optional settings files.
-    link: https://github.com/sobolevn/django-split-settings
+    link: https://github.com/vcavallo/jekyll-hackcss
+  - name: Impostor Roster
+    description: A place for newbies of all experience level to admit their shortcomings
+    link: http://impostorroster.com
+  - name: Rate my Refactor
+    description: Advice and discussion about code design and refactoring, crowd-sourced from a community of experts in your field
+    link: http://www.ratemyrefactor.com/
+  - name: Termodoro
+    description: A simple CLI pomodoro client ruby gem
+    link: https://github.com/vcavallo/termodoro
 
 # if you plan to use the social links in the footer
 social:
