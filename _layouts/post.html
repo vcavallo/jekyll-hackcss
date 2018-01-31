@@ -6,22 +6,27 @@ layout: default
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}"
+      Posted on <time datetime="{{ page.date | date_to_xmlschema }}"
             itemprop="datePublished"
             class="media-heading">
-        {{ page.date | date: "%b %-d, %Y" }}
+        {{ page.date | date: "%b %-d, %Y" }} 
       </time>
 
-      {% if page.author %}
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span itemprop="name">{{ page.author }}</span>
+      {% if page.author or site.author %}
+        By <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name">{% if page.author %}{{ page.author }}{% elsif site.author %}{{ site.author }}{% endif %}</span>
         </span>
       {% endif %}
     </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    {{ content }}
+    {% if page.excerpted %}
+      {% assign content = content | split: site.excerpt_separator %}
+      {{ content.last }}
+    {% else %}
+      {{ content }}
+    {% endif %}
   </div>
 
 </article>

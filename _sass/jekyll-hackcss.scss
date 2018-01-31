@@ -1,11 +1,10 @@
 @charset "utf-8";
 
-// Our variables
 $spacing-unit:     10px;
 $image-size:       50px;
 $icon-size:        15px;
+$link-color:       #444;
 
-// Sizes
 $on-palm:          768px;
 
 // Use media queries like this:
@@ -31,14 +30,21 @@ code.highlighter-rouge {
   border-radius: 3px;
 }
 
+aside[role="navigation"] {
+  padding-right: 15px;
+}
+
 .t-hackcss {  // Main prefix to avoid collisions
   &-body-large {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.25em;
+    line-height: 1.4;
     h1 {
       font-size: 2em;
       font-weight: bold;
       margin: 0.67em 0;
+      &:after {
+        bottom: 7px;
+      }
     }
     h2 {
       font-size: 1.5em;
@@ -50,35 +56,54 @@ code.highlighter-rouge {
       font-weight: bold;
       margin: 1.75rem 0;
     }
+    a {
+      color: $link-color;
+      border-bottom: 1px solid $link-color;
+      &:hover {
+        color: white;
+        background: $link-color;
+      }
+    }
     p {
       margin: 1.75rem 0;
     }
     ul,
     ol {
       display: block;
-      list-style-type: disc;
+      list-style-type: none;
       padding-left: 20px;
       margin: 1.75rem 0;
       & ul {
         margin: .75rem 0;
-        list-style-type: square;
+        list-style-type: none;
       }
     }
     ol {
-      list-style-type: decimal;
+      list-style-type: none;
     }
     li {
       display: list-item;
       padding-left: 0;
+      &:after {
+        left: -16px;
+      }
     }
     blockquote {
+      font-size: 1.17em;
       margin: 1.75rem 0;
-      padding-left: 10px;
-      border-left: 5px solid #f0f0f0;
+      padding-left: 20px;
     }
     pre {
       margin: 1.75rem 0;
       white-space: pre;
+    }
+    em {
+      font-size: 1.25rem;
+      font-style: italic;
+    }
+    strong {
+      font-size: 1.25rem;
+      font-style: bold;
     }
 
     hr {

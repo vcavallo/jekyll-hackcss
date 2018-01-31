@@ -1,5 +1,5 @@
 <div class="t-hackcss-navigation">
-  <h2 class="t-hackcss-navigation-heading">Menu</h2>
+  <h2 class="t-hackcss-navigation-heading"><a style="border-bottom: none;" href="/">{{ site.navigation_menu_heading | default: "Menu" }}</a></h2>
 
   <nav class="menu" role="menubar">
     {% assign url = page.url|remove:'index.html' %}
@@ -9,6 +9,19 @@
         {{ link.text }} <div class="pull-right">&gt;&gt;</div>
       </a>
     {% endfor %}
+
+    {% comment %}
+    TODO:
+    {% if site.categories %}
+      <h3>Categories</h3>
+      <ul>
+        {% for category in site.categories %}
+          {% capture category.name %}{{ category | first }}{% endcapture %}
+          <li>{{ category_name }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% endcomment %}
   </nav>
 
 </div>
