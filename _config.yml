@@ -59,3 +59,5 @@ social:
     username: vinneycavallo
     link: https://twitter.com/vinneycavallo
 
+disqus:
+  shortname: yoursite-shortname-from-disqus-settings

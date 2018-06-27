@@ -76,6 +76,12 @@ social:
   - service: twitter
     username: vinneycavallo
     link: https://twitter.com/vinneycavallo
+
+# if you want to use disqus comments
+disqus:
+  shortname: whatever-disqus-settings-say-for-this-parameter
+# make sure to add `comments: true` to a post's frontmatter to display the disqus comments
+
 ```
 
 # overriding styles
