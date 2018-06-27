@@ -25,6 +25,7 @@ theme_mode: markdown_large  # choices are: 'dark', 'standard', 'markdown', 'mark
 
 # important:
 theme: jekyll-hackcss
+custom_styles: true
 
 # Customizations
 your_name: vinney cavallo

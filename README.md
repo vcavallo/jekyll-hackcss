@@ -78,6 +78,10 @@ social:
     link: https://twitter.com/vinneycavallo
 ```
 
+# overriding styles
+
+Add `custom_styles: true` to your `config.yml`, then create `assets/custom_styles.scss` and add your overrides there.
+
 ## TODO:
 
 - get `jekyll-seo-tag` working
